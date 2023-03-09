@@ -1,0 +1,41 @@
+//君の手を握ってしまったら
+//孤独を知らないこの街には
+//もう二度と帰ってくることはできないのでしょう
+//君が手を差し伸べた 光で影が生まれる
+//歌って聞かせて この話の続き
+//連れて行って見たことない星まで
+//さユリ - 花の塔
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+#define int ll
+#define starburst ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define pii pair<int,int>
+#define pb push_back
+#define ff first
+#define ss second
+#define mp make_pair
+#define maxn 200005
+#define mod 1000000007
+
+void solve(){
+	int d; cin >> d;
+	vector<int> v;
+	while(d){
+		if(d & 1){
+			v.pb(1);
+		}else{
+			v.back() = 0;
+			v.pb(1);
+		}
+		d >>= 1;
+	}
+	cout << v.size() << '\n';
+	for(auto x:v) cout << (x ? "+" : "-");
+}
+
+signed main(){
+    starburst
+    int t = 1; //cin >> t;
+    while(t--) solve();
+}

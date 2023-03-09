@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define pb push_back
+#define ll long long
+#define pii pair<int,int>
+#define All(x) x.begin(), x.end()
+
+ll delivery(int N, int K, int L, int pos[]){
+	vector<int> lp, rp;
+	bool in_mid = 0;
+	for(int i = 0; i < N: ++i){
+		if(pos[i] < L / 2) lp.pb(pos[i]);
+		else if(pos[i] > L / 2) rp.pb(pos[i]);
+		else if(L % 2 != 0) in_mid = 1;
+	}
+	reverse(All(rp));
+}
